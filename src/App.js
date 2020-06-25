@@ -2,6 +2,7 @@ import React from 'react';
 import Split from './composition/Split';
 import './App.css'
 import picture from './goc.png'
+import Tooltip from './composition/Tooltip';
 
 // function App() {
 //   return (
@@ -12,6 +13,16 @@ import picture from './goc.png'
 //     </main>
 //   );
 // }
+const reactTooltip = (
+  <Tooltip message='I am finally starting to get it' color='#126BCC'>
+   react
+  </Tooltip>
+)
+const secondTooltip = (
+  <Tooltip message='none of these buttons work yet'>
+    App 4
+  </Tooltip>
+)
 
 function App() {
   return (
@@ -22,17 +33,23 @@ function App() {
           <li> App 1 </li>
           <li> App 2 </li>
           <li> App 3 </li>
-          <li> App 4 </li>
+          <li> {secondTooltip} </li>
+          
         </ul>
       </Split>
-      <section className='right' flexBasis={2}>
-      <Split className='right' flexBasis={2}>
+      <section className='right' flexbasis={2}>
+      
+      <Split className='right' flexbasis={2}>
       <h1> <img src={picture} alt="matt dizzle react arcade" className='title-img' /> </h1>
       <hr/>
-        This is going to be my react playground where I create fun little apps
+        This is going to be my {reactTooltip} playground where I create fun little apps
         to demonstrate various concepts of react. This my next step in becoming
         a full stack developer. Please browse around and see what I have built.
+        <Tooltip message='one more tooltip message'>
+          This tooltip is not stored in a variable but the others are, it still works.
+        </Tooltip>
       </Split>
+     
       <Split className='counter-box' flexBasis={2}>
       <h3> Counter </h3>
       New Component goes here
@@ -41,5 +58,6 @@ function App() {
     </main>
   )
 }
+
 
 export default App;
