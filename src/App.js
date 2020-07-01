@@ -1,5 +1,5 @@
 import React from 'react';
-import Split from './composition/Split';
+import Box from './composition/Box';
 import './App.css'
 import picture from './goc.png'
 import Tooltip from './composition/Tooltip';
@@ -20,7 +20,7 @@ const secondTooltip = (
 function App() {
   return (
     <main className='App'>
-      <Split className='left'>
+      <Box className='left'>
         <h2> Menu </h2>
         <ul className='menu-list'>
           <li> App 1 </li>
@@ -29,20 +29,17 @@ function App() {
           <li> {secondTooltip} </li>
           
         </ul>
-      </Split>
+      </Box>
       <section className='right' flexbasis={2}>
       
-      <Split className='right' flexbasis={2}>
+      <Box className='right' flexbasis={2}>
       <h1> <img src={picture} alt="matt dizzle react arcade" className='title-img' /> </h1>
       <hr/>
         This is going to be my {reactTooltip} playground where I create fun little apps
         to demonstrate various concepts of react. This my next step in becoming
         a full stack developer. Please browse around and see what I have built.
-        <Tooltip message='one more tooltip message'>
-          This tooltip is not stored in a variable but the others are, it still works.
-        </Tooltip>
         <TheDate />
-      </Split>
+      </Box>
 
      
     </section>

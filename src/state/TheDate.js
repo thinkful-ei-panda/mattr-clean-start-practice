@@ -3,10 +3,14 @@ import React, { Component } from 'react';
 class TheDate extends Component {
     constructor(props) {
     super(props)
+    this.state = { datetime: new Date() };
     }
-  render() {
-    return <div>This is not the date but it will be</div>
-  }
+    render() {
+      
+      return (
+        <div>{this.state.datetime.toLocaleString()}</div>
+      )
+    }
 }
 
 export default TheDate
