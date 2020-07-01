@@ -4,6 +4,7 @@ import './App.css'
 import picture from './goc.png'
 import Tooltip from './composition/Tooltip';
 import TheDate from './state/TheDate'
+import Counter from './state/Counter'
 
 
 const reactTooltip = (
@@ -38,9 +39,10 @@ function App() {
         This is going to be my {reactTooltip} playground where I create fun little apps
         to demonstrate various concepts of react. This my next step in becoming
         a full stack developer. Please browse around and see what I have built.
-        <TheDate />
+        
       </Box>
-
+      <TheDate />
+      <Counter />
      
     </section>
     </main>
