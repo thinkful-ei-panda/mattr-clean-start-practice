@@ -24,7 +24,7 @@ function App() {
       <Box className='left'>
         <h2> Menu </h2>
         <ul className='menu-list'>
-          <li> App 1 </li>
+          <li onClick={function() { console.log('App 1 clicked!') }}> App 1 </li>
           <li> App 2 </li>
           <li> App 3 </li>
           <li> {secondTooltip} </li>
