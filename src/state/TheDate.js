@@ -4,7 +4,7 @@ class TheDate extends Component {
     constructor(props) {
     super(props)
     this.state = { datetime: new Date() };
-    console.log('constructor')
+    // console.log('constructor')
     }
 
     // componentDidMount() {
@@ -14,9 +14,9 @@ class TheDate extends Component {
     // }
 
     componentDidMount() {
-      console.log('componentDidMount')
+      // console.log('componentDidMount')
       this.interval = setInterval(() => {
-        console.log('setInterval')
+        // console.log('setInterval')
         this.setState({
           datetime: new Date()
         })
@@ -24,12 +24,12 @@ class TheDate extends Component {
     }
 
     componentWillUnmount() {
-      console.log('componentWillUnMount')
+      // console.log('componentWillUnMount')
       clearInterval(this.interval)
     }
 
     render() {
-      console.log('render')
+      // console.log('render')
       return (
         <div>{this.state.datetime.toLocaleString()}</div>
       )

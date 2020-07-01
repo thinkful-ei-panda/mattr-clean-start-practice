@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
-class Counter extends React.Component {
+class Counter extends Component {
     state = {
       count: 0
     };
+    
     render() {
       return (
         <div>
