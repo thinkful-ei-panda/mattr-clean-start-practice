@@ -3,16 +3,9 @@ import Split from './composition/Split';
 import './App.css'
 import picture from './goc.png'
 import Tooltip from './composition/Tooltip';
- 
-// function App() {
-//   return (
-//     <main className='App'>
-//       <Split />
-//       <Split />
-//       <Split />
-//     </main>
-//   );
-// }
+import TheDate from './state/TheDate'
+
+
 const reactTooltip = (
   <Tooltip message='I am finally starting to get it' color='#126BCC'>
    react
@@ -48,12 +41,10 @@ function App() {
         <Tooltip message='one more tooltip message'>
           This tooltip is not stored in a variable but the others are, it still works.
         </Tooltip>
+        <TheDate />
       </Split>
+
      
-      <Split className='counter-box' flexBasis={2}>
-      <h3> Counter </h3>
-      New Component goes here
-      </Split>
     </section>
     </main>
   )

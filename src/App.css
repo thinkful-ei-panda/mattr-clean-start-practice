@@ -9,6 +9,7 @@
  }
 .App {
     display: flex;
+    flex-direction: column;
     margin: 0px;
     min-height: calc(100vh - 80px);
     /* align-items: center; */
@@ -40,4 +41,10 @@
     background-color: #2A2A57;
     color: #d8d8d8;
     text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+   .App {
+      flex-direction: row;
+    }
   }
