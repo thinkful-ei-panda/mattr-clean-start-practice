@@ -3,7 +3,7 @@ import Split from './composition/Split';
 import './App.css'
 import picture from './goc.png'
 import Tooltip from './composition/Tooltip';
-
+ 
 // function App() {
 //   return (
 //     <main className='App'>
