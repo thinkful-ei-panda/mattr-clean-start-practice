@@ -1,0 +1,46 @@
+import React, { Component } from 'react'
+import './Accordian.css'
+
+export default class Accordian extends Component {
+    static defaultProps = {
+        sections: []
+      };
+
+      state = {
+        activeSectionIndex: null,
+      }
+
+      handleSetActiveSecion = (sectionIndex) => {
+        this.setState({ activeSectionIndex: sectionIndex })
+      }
+
+      renderItem(section, idx, activeSectionIndex) {
+        return (
+          <li className='Accordion__item' key={idx}>
+            <button
+              type='button'
+              onClick={() => this.handleSetActiveSecion(idx)}
+            >
+              {section.title}
+            </button>
+            {(activeSectionIndex === idx) && <p>{section.content}</p>}
+          </li>
+        )
+      }
+
+
+    render() {
+    const { activeSectionIndex } = this.state
+    const { sections } = this.props
+        return (
+            <div>
+                <h1>This is a Event Handler and Conditionals Drill: Accordian</h1>
+                <ul className='Accordion'>
+                {sections.map((section, idx) =>
+                this.renderItem(section, idx, activeSectionIndex)
+                )}
+                </ul>
+            </div>
+        )
+    }
+}

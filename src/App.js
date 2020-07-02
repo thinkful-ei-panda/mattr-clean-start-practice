@@ -9,6 +9,7 @@ import HelloWorld from './state-drills/HelloWorld';
 import Bomb from './state-drills/Bomb';
 import Roulette from './state-drills/Roulette';
 import Tabs from './state-drills/Tabs';
+import Accordian from './state-drills/Accordian';
 
 
 const reactTooltip = (
@@ -30,6 +31,21 @@ const tabsProp = [
   { name: 'Third tab',
     content: 'Because Lorem Ipsum is too much in this situation.lol' },
 ];
+
+const sections = [
+  {
+    title: 'Section 1',
+    content: 'This is the first Section',
+  },
+  {
+    title: 'Section 2',
+    content: 'This is the second section',
+  },
+  {
+    title: 'Section 3',
+    content: 'And some how this is the 4th section',
+  },
+]
 
 function App() {
   return (
@@ -55,6 +71,7 @@ function App() {
         
       </Box>
       <Box className="toy-box">
+        <Accordian sections={sections}/>
       <TheDate />
       <Counter />
       <Counter count={123} />
