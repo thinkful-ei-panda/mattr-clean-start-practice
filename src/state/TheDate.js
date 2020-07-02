@@ -31,7 +31,9 @@ class TheDate extends Component {
     render() {
       // console.log('render')
       return (
-        <div>{this.state.datetime.toLocaleString()}</div>
+        <div>
+          <h1>This is a State Drill: The Date</h1>
+          {this.state.datetime.toLocaleString()}</div>
       )
     }
 }

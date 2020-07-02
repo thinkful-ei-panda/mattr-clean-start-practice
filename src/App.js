@@ -5,6 +5,9 @@ import picture from './goc.png'
 import Tooltip from './composition/Tooltip';
 import TheDate from './state/TheDate'
 import Counter from './state/Counter'
+import HelloWorld from './state-drills/HelloWorld';
+import Bomb from './state-drills/Bomb';
+import Roulette from './state-drills/Roulette';
 
 
 const reactTooltip = (
@@ -41,9 +44,14 @@ function App() {
         a full stack developer. Please browse around and see what I have built.
         
       </Box>
+      <Box className="toy-box">
       <TheDate />
       <Counter />
-     
+      <Counter count={123} />
+      <HelloWorld />
+      <Bomb />
+      <Roulette />
+      </Box>
     </section>
     </main>
   )
