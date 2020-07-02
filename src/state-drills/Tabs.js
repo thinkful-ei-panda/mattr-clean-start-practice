@@ -35,7 +35,7 @@ export default class Tabs extends Component {
                 {this.props.tabs.length && (
                     <div className='content'>
                     {this.renderButtons()}
-                    {this.props.tabs.length && this.renderContent()}
+                    {!!this.props.tabs.length && this.renderContent()}
                     </div>
                 )}
             </div>
