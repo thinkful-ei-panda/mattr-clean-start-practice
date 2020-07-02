@@ -8,6 +8,7 @@ import Counter from './state/Counter'
 import HelloWorld from './state-drills/HelloWorld';
 import Bomb from './state-drills/Bomb';
 import Roulette from './state-drills/Roulette';
+import Tabs from './state-drills/Tabs';
 
 
 const reactTooltip = (
@@ -20,6 +21,15 @@ const secondTooltip = (
     App 4
   </Tooltip>
 )
+
+const tabsProp = [
+  { name: 'First tab',
+    content: 'This is a sentence for Matt Dizzle' },
+  { name: 'Second tab',
+    content: 'This is a another for sentence for you.' },
+  { name: 'Third tab',
+    content: 'Because Lorem Ipsum is too much in this situation.lol' },
+];
 
 function App() {
   return (
@@ -51,7 +61,9 @@ function App() {
       <HelloWorld />
       <Bomb />
       <Roulette />
+      <Tabs tabs={tabsProp} />
       </Box>
+      
     </section>
     </main>
   )

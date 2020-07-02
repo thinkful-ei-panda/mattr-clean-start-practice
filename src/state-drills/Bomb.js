@@ -43,7 +43,7 @@ export default class Bomb extends Component {
                 return (
                   <div className='CountdownBomb'>
                       <h1>This is a State Drill</h1>
-                    {this.renderDisplay()}
+                    <p> {this.renderDisplay()} </p>
                   </div>
                 )
               }

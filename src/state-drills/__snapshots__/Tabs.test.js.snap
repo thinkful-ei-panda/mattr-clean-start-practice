@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs Component renders the first tab by default 1`] = `
+<div>
+  <h1>
+    This is a Event Handler and Conditionals Drill: Tabs
+  </h1>
+  <div
+    className="content"
+  >
+    <button
+      onClick={[Function]}
+    >
+      First tab
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Second tab
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Third tab
+    </button>
+    <div
+      className="content"
+    >
+      <p>
+         
+        This is a sentence for Matt Dizzle
+         
+      </p>
+    </div>
+  </div>
+</div>
+`;
