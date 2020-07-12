@@ -31,6 +31,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './playingwithdanger/App';
+import App from './state/Counter';
 
 ReactDOM.render(<App />, document.getElementById('root'));
